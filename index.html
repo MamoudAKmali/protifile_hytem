@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>هيثم سعيد العيسائي | مهندس تقنية معلومات</title>
+    <meta name="description" content="الموقع الشخصي لمهندس تقنية المعلومات هيثم سعيد العيسائي - متخصص في بناء المواقع والتطبيقات">
+    <link rel="icon" type="image/jpeg" href="WhatsApp_Image_2026-04-07_at_3_44_42_AM.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-circle"></div>
+            <div class="preloader-circle"></div>
+            <div class="preloader-circle"></div>
+            <span class="preloader-text">HA</span>
+        </div>
+    </div>
+
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">HA</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-section="home">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">من أنا</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">المهارات</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">المشاريع</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">الخبرات</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">تواصل معي</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-effects">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-on-scroll">
+                    <span class="badge-dot"></span>
+                    <span>متاح للعمل</span>
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    <span class="hero-greeting">مرحباً، أنا</span>
+                    <span class="hero-name">
+                        <span class="name-char" style="--i:0">هـ</span><span class="name-char" style="--i:1">ـيـ</span><span class="name-char" style="--i:2">ـثـ</span><span class="name-char" style="--i:3">ـم</span>
+                        <span class="name-space"> </span>
+                        <span class="name-char" style="--i:4">ا</span><span class="name-char" style="--i:5">لـ</span><span class="name-char" style="--i:6">ـعـ</span><span class="name-char" style="--i:7">ـيـ</span><span class="name-char" style="--i:8">ـسـ</span><span class="name-char" style="--i:9">ـائـ</span><span class="name-char" style="--i:10">ـي</span>
+                    </span>
+                </h1>
+                <div class="hero-typewriter animate-on-scroll">
+                    <span class="typewriter-prefix">أنا </span>
+                    <span class="typewriter-text" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                <p class="hero-description animate-on-scroll">
+                    مهندس تقنية معلومات متخصص في تطوير المواقع والتطبيقات الحديثة
+                    <br>بخبرة تمتد لأكثر من سنتين في بناء حلول رقمية مبتكرة
+                </p>
+                <div class="hero-buttons animate-on-scroll">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>استكشف أعمالي</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>تواصل معي</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-stats animate-on-scroll">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">مشروع منجز</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">سنوات خبرة</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">عميل راضي</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper animate-on-scroll">
+                <div class="hero-image-container">
+                    <div class="hero-image-glow"></div>
+                    <div class="hero-image-ring ring-1"></div>
+                    <div class="hero-image-ring ring-2"></div>
+                    <div class="hero-image-ring ring-3"></div>
+                    <img src="WhatsApp_Image_2026-04-07_at_3_44_42_AM.jpeg" alt="هيثم سعيد العيسائي" class="hero-image" id="profileImg">
+                    <div class="floating-tech floating-tech-1"><i class="fab fa-html5"></i></div>
+                    <div class="floating-tech floating-tech-2"><i class="fab fa-css3-alt"></i></div>
+                    <div class="floating-tech floating-tech-3"><i class="fab fa-js-square"></i></div>
+                    <div class="floating-tech floating-tech-4"><i class="fab fa-python"></i></div>
+                    <div class="floating-tech floating-tech-5"><i class="fab fa-react"></i></div>
+                    <div class="floating-tech floating-tech-6"><i class="fab fa-node-js"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>اسحب للأسفل</span>
+        </div>
+    </section>
+
+    <!-- Tech Marquee Band -->
+    <div class="tech-marquee">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span><i class="fab fa-html5"></i> HTML5</span>
+                <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span><i class="fab fa-js-square"></i> JavaScript</span>
+                <span><i class="fab fa-react"></i> React</span>
+                <span><i class="fab fa-python"></i> Python</span>
+                <span><i class="fab fa-node-js"></i> Node.js</span>
+                <span><i class="fas fa-database"></i> MySQL</span>
+                <span><i class="fab fa-git-alt"></i> Git</span>
+                <span><i class="fab fa-docker"></i> Docker</span>
+                <span><i class="fab fa-figma"></i> Figma</span>
+                <span><i class="fab fa-linux"></i> Linux</span>
+                <span><i class="fas fa-cloud"></i> AWS</span>
+                <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                <span><i class="fas fa-flask"></i> Flask</span>
+                <!-- Duplicate for seamless loop -->
+                <span><i class="fab fa-html5"></i> HTML5</span>
+                <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span><i class="fab fa-js-square"></i> JavaScript</span>
+                <span><i class="fab fa-react"></i> React</span>
+                <span><i class="fab fa-python"></i> Python</span>
+                <span><i class="fab fa-node-js"></i> Node.js</span>
+                <span><i class="fas fa-database"></i> MySQL</span>
+                <span><i class="fab fa-git-alt"></i> Git</span>
+                <span><i class="fab fa-docker"></i> Docker</span>
+                <span><i class="fab fa-figma"></i> Figma</span>
+                <span><i class="fab fa-linux"></i> Linux</span>
+                <span><i class="fas fa-cloud"></i> AWS</span>
+                <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                <span><i class="fas fa-flask"></i> Flask</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">من <span class="gradient-text">أنا</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-side animate-on-scroll">
+                    <div class="about-image-card">
+                        <img src="WhatsApp_Image_2026-04-07_at_3_44_42_AM.jpeg" alt="هيثم سعيد العيسائي" class="about-image">
+                        <div class="about-image-overlay"></div>
+                        <div class="about-exp-badge">
+                            <span class="exp-number">+3</span>
+                            <span class="exp-text">سنوات خبرة</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <h3 class="about-subtitle">مهندس تقنية معلومات</h3>
+                    <p class="about-text">
+                        أنا <strong>هيثم سعيد العيسائي</strong>، مهندس تقنية معلومات شغوف بالتقنية والابتكار. 
+                        أمتلك خبرة تمتد لأكثر من سنتين في مجال تطوير المواقع والتطبيقات، حيث أعمل على تحويل الأفكار 
+                        إلى واقع رقمي مذهل باستخدام أحدث التقنيات والأدوات.
+                    </p>
+                    <p class="about-text">
+                        أؤمن بأن التصميم الجيد هو الذي يجمع بين الجمال والوظيفة، وأسعى دائماً لإنشاء تجارب 
+                        رقمية فريدة تلهم المستخدمين وتحقق أهداف العملاء.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <span class="info-label">الاسم</span>
+                                <span class="info-value">هيثم سعيد العيسائي</span>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">التخصص</span>
+                                <span class="info-value">هندسة تقنية المعلومات</span>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="info-label">البريد</span>
+                                <span class="info-value"><a href="mailto:haitham.alesii@example.com">haitham.alesii@example.com</a></span>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="info-label">الهاتف</span>
+                                <span class="info-value" dir="ltr">+966 557 214 460</span>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">الموقع</span>
+                                <span class="info-value">المملكة العربية السعودية</span>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <span class="info-label">الحالة</span>
+                                <span class="info-value status-available">متاح للعمل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary about-btn">
+                        <span>تحميل السيرة الذاتية</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">المهارات <span class="gradient-text">التقنية</span></h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-tabs animate-on-scroll">
+                <button class="skill-tab active" data-tab="frontend">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>الواجهات الأمامية</span>
+                </button>
+                <button class="skill-tab" data-tab="backend">
+                    <i class="fas fa-server"></i>
+                    <span>الواجهات الخلفية</span>
+                </button>
+                <button class="skill-tab" data-tab="tools">
+                    <i class="fas fa-tools"></i>
+                    <span>الأدوات والتقنيات</span>
+                </button>
+                <button class="skill-tab" data-tab="soft">
+                    <i class="fas fa-brain"></i>
+                    <span>المهارات الشخصية</span>
+                </button>
+            </div>
+
+            <div class="skills-content">
+                <!-- Frontend Skills -->
+                <div class="skills-panel active" id="frontend">
+                    <div class="skills-grid">
+                        <div class="skill-card animate-on-scroll" style="--delay: 0">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-html5" style="color: #E34F26"></i>
+                            </div>
+                            <h4 class="skill-name">HTML5</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95" style="--color: #E34F26"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 1">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-css3-alt" style="color: #1572B6"></i>
+                            </div>
+                            <h4 class="skill-name">CSS3</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90" style="--color: #1572B6"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 2">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-js-square" style="color: #F7DF1E"></i>
+                            </div>
+                            <h4 class="skill-name">JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85" style="--color: #F7DF1E"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 3">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-react" style="color: #61DAFB"></i>
+                            </div>
+                            <h4 class="skill-name">React.js</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80" style="--color: #61DAFB"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 4">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-bootstrap" style="color: #7952B3"></i>
+                            </div>
+                            <h4 class="skill-name">Bootstrap</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90" style="--color: #7952B3"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 5">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-sass" style="color: #CC6699"></i>
+                            </div>
+                            <h4 class="skill-name">Sass</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75" style="--color: #CC6699"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skills-panel" id="backend">
+                    <div class="skills-grid">
+                        <div class="skill-card animate-on-scroll" style="--delay: 0">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-python" style="color: #3776AB"></i>
+                            </div>
+                            <h4 class="skill-name">Python</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88" style="--color: #3776AB"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 1">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-node-js" style="color: #339933"></i>
+                            </div>
+                            <h4 class="skill-name">Node.js</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="78" style="--color: #339933"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 2">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-flask" style="color: #00D8FF"></i>
+                            </div>
+                            <h4 class="skill-name">Flask</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85" style="--color: #00D8FF"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 3">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-database" style="color: #4479A1"></i>
+                            </div>
+                            <h4 class="skill-name">MySQL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80" style="--color: #4479A1"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 4">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-leaf" style="color: #47A248"></i>
+                            </div>
+                            <h4 class="skill-name">MongoDB</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="72" style="--color: #47A248"></div>
+                            </div>
+                            <span class="skill-percent">72%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 5">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-php" style="color: #777BB4"></i>
+                            </div>
+                            <h4 class="skill-name">PHP</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70" style="--color: #777BB4"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skills-panel" id="tools">
+                    <div class="skills-grid">
+                        <div class="skill-card animate-on-scroll" style="--delay: 0">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-git-alt" style="color: #F05032"></i>
+                            </div>
+                            <h4 class="skill-name">Git & GitHub</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85" style="--color: #F05032"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 1">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-docker" style="color: #2496ED"></i>
+                            </div>
+                            <h4 class="skill-name">Docker</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65" style="--color: #2496ED"></div>
+                            </div>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 2">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-linux" style="color: #FCC624"></i>
+                            </div>
+                            <h4 class="skill-name">Linux</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75" style="--color: #FCC624"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 3">
+                            <div class="skill-icon-wrapper">
+                                <i class="fab fa-figma" style="color: #F24E1E"></i>
+                            </div>
+                            <h4 class="skill-name">Figma</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70" style="--color: #F24E1E"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 4">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-cloud" style="color: #FF9900"></i>
+                            </div>
+                            <h4 class="skill-name">AWS</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60" style="--color: #FF9900"></div>
+                            </div>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 5">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-code-branch" style="color: #6C63FF"></i>
+                            </div>
+                            <h4 class="skill-name">REST APIs</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="82" style="--color: #6C63FF"></div>
+                            </div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skills-panel" id="soft">
+                    <div class="skills-grid">
+                        <div class="skill-card animate-on-scroll" style="--delay: 0">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-lightbulb" style="color: #FFD700"></i>
+                            </div>
+                            <h4 class="skill-name">حل المشكلات</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92" style="--color: #FFD700"></div>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 1">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-users" style="color: #00D4AA"></i>
+                            </div>
+                            <h4 class="skill-name">العمل الجماعي</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88" style="--color: #00D4AA"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 2">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-comments" style="color: #FF6B9D"></i>
+                            </div>
+                            <h4 class="skill-name">التواصل الفعال</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90" style="--color: #FF6B9D"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 3">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-clock" style="color: #6C63FF"></i>
+                            </div>
+                            <h4 class="skill-name">إدارة الوقت</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85" style="--color: #6C63FF"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 4">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-rocket" style="color: #FF4757"></i>
+                            </div>
+                            <h4 class="skill-name">التعلم السريع</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95" style="--color: #FF4757"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-card animate-on-scroll" style="--delay: 5">
+                            <div class="skill-icon-wrapper">
+                                <i class="fas fa-paint-brush" style="color: #FF8C42"></i>
+                            </div>
+                            <h4 class="skill-name">الإبداع والابتكار</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88" style="--color: #FF8C42"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">أحدث <span class="gradient-text">المشاريع</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">مجموعة مختارة من أبرز المشاريع التي عملت عليها</p>
+            </div>
+
+            <div class="projects-filter animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="web">مواقع ويب</button>
+                <button class="filter-btn" data-filter="app">تطبيقات</button>
+                <button class="filter-btn" data-filter="api">API</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll" data-category="web" style="--delay: 0">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" style="--gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/haitham-alesii-cs" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">منصة التجارة الإلكترونية</h3>
+                        <p class="project-desc">متجر إلكتروني متكامل مع سلة تسوق، نظام دفع، ولوحة تحكم للمدير</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll" data-category="app" style="--delay: 1">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" style="--gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%)">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/haitham-alesii-cs" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">نظام إدارة المهام</h3>
+                        <p class="project-desc">تطبيق لإدارة المهام بأسلوب Kanban مع إمكانية التعاون الفوري بين أعضاء الفريق</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Vuetify</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card animate-on-scroll" data-category="web" style="--delay: 2">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" style="--gradient: linear-gradient(135deg, #ee9ca7 0%, #ffdde1 100%)">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/haitham-alesii-cs" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">منصة العقارات الذكية</h3>
+                        <p class="project-desc">منصة لعرض وإدارة العقارات مع خرائط تفاعلية وفلترة متقدمة وحجز مواعيد</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Mapbox</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card animate-on-scroll" data-category="web" style="--delay: 3">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" style="--gradient: linear-gradient(135deg, #0c3483 0%, #a2b6df 100%)">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/haitham-alesii-cs" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">لوحة تحليلات العملات الرقمية</h3>
+                        <p class="project-desc">لوحة معلومات تحليلية لتتبع أسعار العملات الرقمية مع رسوم بيانية حية</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Chart.js</span>
+                            <span>CoinGecko API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card animate-on-scroll" data-category="app" style="--delay: 4">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" style="--gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">
+                            <i class="fas fa-cloud-sun-rain"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/haitham-alesii-cs" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">تطبيق الطقس الذكي</h3>
+                        <p class="project-desc">تطبيق أحوال الطقس مع توقعات لـ7 أيام وتحديد الموقع التلقائي والإشعارات</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>OpenWeather API</span>
+                            <span>PWA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card animate-on-scroll" data-category="api" style="--delay: 5">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" style="--gradient: linear-gradient(135deg, #5f2c82 0%, #49a09d 100%)">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/haitham-alesii-cs" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">منصة التشفير الآمنة</h3>
+                        <p class="project-desc">منصة تعليمية وعملية لعمليات التشفير وفك التشفير مع خوارزميات متعددة</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Cryptography</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card animate-on-scroll" data-category="app" style="--delay: 6">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" style="--gradient: linear-gradient(135deg, #FF512F 0%, #F09819 100%)">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/haitham-alesii-cs" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">تطبيق تتبع اللياقة</h3>
+                        <p class="project-desc">تطبيق لتتبع التمارين الرياضية والنظام الغذائي مع إحصائيات تفصيلية</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Node.js</span>
+                            <span>D3.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card animate-on-scroll" data-category="api" style="--delay: 7">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" style="--gradient: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%)">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="معاينة"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/haitham-alesii-cs" class="project-link" title="الكود المصدري"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">بوت الذكاء الاصطناعي</h3>
+                        <p class="project-desc">بوت محادثة ذكي مبني على API الذكاء الاصطناعي لخدمة العملاء والدعم الفني</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>OpenAI API</span>
+                            <span>FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">الخبرات <span class="gradient-text">والتعليم</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll" style="--delay: 0">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">خبرة عملية</div>
+                        <h3 class="timeline-title">مطور ويب كامل</h3>
+                        <span class="timeline-company"><i class="fas fa-building"></i> عمل حر - Freelancer</span>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2023 - الحالي</span>
+                        <p class="timeline-desc">تصميم وتطوير مواقع وتطبيقات ويب متكاملة للعملاء، مع التركيز على الأداء العالي وتجربة المستخدم المتميزة.</p>
+                        <div class="timeline-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" style="--delay: 1">
+                    <div class="timeline-dot">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">خبرة عملية</div>
+                        <h3 class="timeline-title">مطور واجهات أمامية</h3>
+                        <span class="timeline-company"><i class="fas fa-building"></i> مشاريع تقنية متعددة</span>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2022 - 2023</span>
+                        <p class="timeline-desc">تطوير واجهات مستخدم تفاعلية ومتجاوبة باستخدام أحدث أطر العمل والتقنيات الحديثة.</p>
+                        <div class="timeline-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" style="--delay: 2">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge education">تعليم</div>
+                        <h3 class="timeline-title">بكالوريوس هندسة تقنية المعلومات</h3>
+                        <span class="timeline-company"><i class="fas fa-university"></i> جامعة تعز - كلية الهندسة وتقنية المعلومات</span>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2020 - 2024</span>
+                        <p class="timeline-desc">دراسة متخصصة في هندسة تقنية المعلومات تشمل البرمجة، قواعد البيانات، الشبكات، وأمن المعلومات.</p>
+                        <div class="timeline-tags">
+                            <span>هندسة البرمجيات</span>
+                            <span>قواعد البيانات</span>
+                            <span>أمن المعلومات</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate-on-scroll" style="--delay: 3">
+                    <div class="timeline-dot">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge education">شهادات</div>
+                        <h3 class="timeline-title">شهادات احترافية</h3>
+                        <span class="timeline-company"><i class="fas fa-award"></i> منصات تعليمية متعددة</span>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2022 - 2024</span>
+                        <p class="timeline-desc">حصلت على عدة شهادات احترافية في مجال تطوير الويب وتقنية المعلومات من منصات عالمية معتمدة.</p>
+                        <div class="timeline-tags">
+                            <span>Full Stack Development</span>
+                            <span>Cloud Computing</span>
+                            <span>Cybersecurity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Services Section -->
+    <section class="section services" id="services">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;services&gt;</span>
+                <h2 class="section-title">الخدمات <span class="gradient-text">التي أقدمها</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll" style="--delay: 0">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon-bg"></div>
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>تطوير المواقع</h3>
+                    <p>بناء مواقع ويب حديثة ومتجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> تصميم متجاوب</span>
+                        <span><i class="fas fa-check"></i> SEO محسّن</span>
+                        <span><i class="fas fa-check"></i> أداء عالي</span>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll" style="--delay: 1">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon-bg"></div>
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>تطوير التطبيقات</h3>
+                    <p>تصميم وبرمجة تطبيقات الهاتف المحمول لنظامي Android و iOS</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> واجهات حديثة</span>
+                        <span><i class="fas fa-check"></i> أداء سلس</span>
+                        <span><i class="fas fa-check"></i> تحديثات مستمرة</span>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll" style="--delay: 2">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon-bg"></div>
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>تصميم UI/UX</h3>
+                    <p>تصميم واجهات مستخدم جذابة وتجربة مستخدم سلسة ومريحة</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Figma & Adobe XD</span>
+                        <span><i class="fas fa-check"></i> نماذج تفاعلية</span>
+                        <span><i class="fas fa-check"></i> اختبار المستخدم</span>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll" style="--delay: 3">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon-bg"></div>
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>حلول الباك إند</h3>
+                    <p>بناء واجهات برمجية وخدمات خلفية قوية وقابلة للتوسع</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> REST APIs</span>
+                        <span><i class="fas fa-check"></i> قواعد البيانات</span>
+                        <span><i class="fas fa-check"></i> الأمان</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">تواصل <span class="gradient-text">معي</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">هل لديك مشروع أو فكرة؟ دعنا نتحدث!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-info-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <a href="mailto:haitham.alesii@example.com">haitham.alesii@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>رقم الهاتف</h4>
+                            <a href="tel:+966557214460" dir="ltr">+966 557 214 460</a>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>الموقع</h4>
+                            <span>المملكة العربية السعودية</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>تابعني على</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/haitham-alesii-cs" target="_blank" rel="noopener noreferrer" class="social-link github" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:haitham.alesii@example.com" class="social-link email" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="social-link linkedin" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link twitter" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">الاسم الكامل</label>
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">البريد الإلكتروني</label>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="subject" required placeholder=" ">
+                            <label for="subject">الموضوع</label>
+                            <i class="fas fa-tag"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-wrapper textarea-wrapper">
+                            <textarea id="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">رسالتك</label>
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>إرسال الرسالة</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">HA</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">تصميم وتطوير بـ ❤️ بواسطة هيثم العيسائي</p>
+                <div class="footer-social">
+                    <a href="https://github.com/haitham-alesii-cs" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="mailto:haitham.alesii@example.com"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                       </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
